@@ -26,12 +26,12 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository:
 
    ```shell
-   git clone https://github.com/yourusername/habit-tracker.git
+   git clone https://github.com/AnmolRajput272/Habit-Tracker.git
 
 2. Navigate to the project directory:
 
    ```shell
-   cd habit-tracker
+   cd Habit-Tracker
 
 3. Install the project dependencies:
 
