@@ -1,0 +1,236 @@
+/* Reset default margin and padding */
+body, h1, h2, p, button, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: rgb(168, 229, 168)
+}
+
+/* Container styles */
+#app {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Form styles */
+#addHabitForm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#addHabitForm label,
+#addHabitForm input[type="text"],
+#addHabitForm input[type="time"],
+#addHabitForm button {
+  margin-right: 10px;
+}
+
+#addHabitForm button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* View buttons */
+#show-daily,
+#show-weekly {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#show-daily:hover,
+#show-weekly:hover {
+  background-color: #0056b3;
+}
+
+/* Habits container */
+#habits-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+/* Habit styles */
+.habit {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Status list styles */
+.status-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Status card styles */
+.status {
+  background-color: #f0ca99;
+  border: 1px solid #ddd;
+  padding: 15px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.status:hover {
+  background-color:#edcaca;
+  transform: scale(1.5);
+}
+
+.status p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.change-status {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.change-status:hover {
+  background-color: #0056b3;
+}
+
+/* Toggle Favourite and Delete buttons */
+.toggle-favourite,
+.delete-habit {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  padding: 12px 12px;
+}
+
+.toggle-favourite {
+  background-color: #5cb85c;
+  margin-right: 20px;
+}
+
+.toggle-favourite:hover,
+.delete-habit:hover {
+  opacity: 0.8;
+}
+
+.change-status{
+  padding: 7px 12px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.habit-time{
+  margin-top: 20px;
+}
+
+.btn-stats{
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats{
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+
+.stats>*{
+  font-weight: bolder;
+}
+
+.habit-time{
+  font-size: larger;
+}
+
+/* Input form styles */
+.habit-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.habit-form > *{
+  margin: 10px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.status-date{
+  font-weight: bolder;
+}
+

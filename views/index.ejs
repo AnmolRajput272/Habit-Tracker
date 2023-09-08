@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" type="text/css" href="/public/styles.css">
+</head>
+<body>
+  <h1>Habit Tracker</h1>
+
+  <form class="habit-form" action="/habits/create" method="post">
+    <div class="input-group">
+      <label for="name">Habit Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="input-group">
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+    </div>
+    <button class="submit-button" type="submit">Create Habit</button>
+  </form>
+
+  <h2>Filter by:</h2>
+  <button id="show-daily">Daily</button>
+  <button id="show-weekly">Weekly</button>
+
+  <script src="/public/script.js"></script>
+
+  <ul id="habits-container">
+    <% habits.forEach(habit => { %>
+      <li>
+        <div class="habit">
+          <h2 class="habit-name">Habit Name: <%= habit.name %></h2>
+          <p class="habit-time">Time: <%= habit.time %></p>
+          <div class="status-list">
+            <% habit.HabitStatuses.forEach(status => { %>
+              <div class="status">
+                  <div class="status-date">
+                    Date: <%= status.date %> </p>
+                  </div>
+                  <button class="change-status" data-habit-id="<%= habit.id %>" data-date="<%= status.date %>">
+                    <%= status.status %>
+                  </button>
+              </div>
+            <% }); %>
+            </div>
+            <div class="btn-stats">
+              <div class="stats">
+                <p>Best Streak: <%= habit.stats.bestStreak %></p>
+                <p>Present Streak: <%= habit.stats.presentStreak %></p>
+                <p>Total Done Days: <%= habit.stats.totalDoneDays %></p>
+              </div>
+              <div>
+                <button class="toggle-favourite" data-habit-id="<%= habit.id %>">
+                  <%= habit.isFavorite ? 'Remove from Favourites' : 'Add to Favourites' %>
+                </button>
+                <button class="delete-habit" data-habit-id="<%= habit.id %>">Delete</button>
+              </div>
+            </div>
+        </div>
+      </li>
+    <% }); %>
+  </ul>
+
+</body>
+</html>
