@@ -36,9 +36,12 @@ Before you begin, ensure you have met the following requirements:
    ```shell
    npm install
 
+4. Configure the database settings in models/sequelize.js:
+
+
 ## Usage
 
-1. Install the project dependencies:
+1. Start the application:
 
    ```shell
    node app.js
