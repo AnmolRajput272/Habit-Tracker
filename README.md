@@ -2,8 +2,6 @@
 
 Habit Tracker is a web application that helps you build and maintain good habits. You can create habits, track your progress, and stay motivated to achieve your goals.
 
-![Habit Tracker Screenshot](screenshot.png)
-
 ## Features
 
 - **Create Habits:** Add new habits to track.
@@ -44,7 +42,6 @@ Before you begin, ensure you have met the following requirements:
 
    ```shell
    node app.js
-
 
 The server will run at http://localhost:3000.
 
